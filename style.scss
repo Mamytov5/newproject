@@ -1,0 +1,130 @@
+@import "global";
+@import "mixin";
+@import "media";
+
+#header {
+  .header {
+    @include center();
+    &__menu{
+      display: none;
+    }
+    &__box{
+      display: none;
+    }
+    &__nav a {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #000000;
+      margin: 0 25px;
+    }
+
+    &__nav a:hover {
+      border-bottom: 2px solid black;
+    }
+
+
+  }
+}
+
+#hero {
+  margin: 50px 0 0 0;
+
+  .hero {
+    @include center();
+
+    &__img img {
+      width: 450px;
+      height: 400px;
+    }
+
+    &__text h1 {
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 42px;
+      text-transform: uppercase;
+      color: #000000;
+      width: 429px;
+    }
+
+    &__text p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #666666;
+      width: 419px;
+      margin: 15px 0;
+    }
+
+    &__text h3 {
+      font-weight: 700;
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #000000;
+    }
+  }
+}
+
+#about {
+  .about {
+    @include center();
+    margin: 60px 0 0 0;
+
+    &__text h3 {
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #999999;
+      margin: 10px 0 0 0;
+    }
+
+    &__text h1 {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #000000;
+      width: 347px;
+      margin: 15px 0;
+    }
+
+    &__text h4 {
+      font-weight: 700;
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #000000;
+      margin: 0 0 40px 0;
+    }
+  }
+}
+#product{
+  .product{
+    @include center();
+    &__texts h3{
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #999999;
+      margin: 10px 0 0 0;
+    }
+    &__texts h1{
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #000000;
+      width: 276px;
+      margin: 15px 0;
+    }
+    &__texts h4{
+      font-weight: 700;
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #000000;
+      margin: 0 0 40px 0;
+    }
+  }
+}
